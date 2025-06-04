@@ -1,0 +1,57 @@
+@font-face {
+    font-family:Pacifico-Regular ;
+    src: url(../fonts/Pacifico-Regular.ttf);
+}
+@font-face {
+    font-family:Righteous-Regular ;
+    src: url(../fonts/Righteous-Regular.ttf);
+}
+h1{
+    font-family: Pacifico-Regular;
+    font-family: 4rem;
+}
+h2{
+    font-family: Righteous-Regular;
+}
+
+
+:root {
+  --main-color: #254d70;
+  --sec-color: #efe4d2;
+  --third-color: #954c2e;
+}
+.bg-main-color {
+  background-color: var(--main-color);
+}
+.bg-sec-color {
+  background-color: var(--sec-color);
+}
+.text-sec-color {
+  color: var(--sec-color);
+}
+.gridant-text-color {
+  background-image: linear-gradient(#954c2e, #050504);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.bg-gridant-color {
+  background-image: linear-gradient(#954c2e, #050504);
+}
+#submitbtn:hover {
+  background-image: linear-gradient(#af7159, #050504);
+}
+.hero::before {
+  position: absolute;
+  background-color: #fec260;
+  content: "";
+  left: -5px;
+  right: -5px;
+  bottom: 0;
+  top:0;
+  transform: translateY(70%);
+  z-index: -1;
+  transition: all 1s;
+}
+.hero:hover:before {
+    transform: translateY(40%);
+}
